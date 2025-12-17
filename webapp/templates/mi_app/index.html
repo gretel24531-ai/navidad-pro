@@ -81,7 +81,7 @@
 
         /* INICIO */
         .inicio{
-            background-image: url('img/tree.jpg');
+            background-image: url("{% static 'webapp/img/tree.jpg' %}");
             height: 80vh;
             background-size: cover;
             background-position: center;
@@ -496,7 +496,7 @@
     <!-- ENCABEZADO -->
     <header class="header">
         <div class="header-left">
-            <img src="img/deco.png" alt="Decoración navideña" class="header-deco">
+            <img src= "{% static 'webapp/img/deco.png' %}" alt="Decoración navideña" class="header-deco">
             <h1>La Magia de la Navidad</h1>
         </div>
         <nav class="menu">
@@ -533,7 +533,7 @@
                         Aunque la fecha exacta no aparece en la Biblia, la conmemoración comienza
                         a difundirse entre las comunidades cristianas.
                     </p>
-                    <img src="img/siglo1.jpg" alt="Nacimiento de Jesús">
+                    <img src="{% static 'webapp/img/siglo1.jpg' %}" alt="Nacimiento de Jesús">
                 </div>
             </div>
 
@@ -545,7 +545,7 @@
                         En Roma se establece el 25 de diciembre como la fecha oficial de la Navidad,
                         coincidiendo con festividades paganas como la Saturnalia.
                     </p>
-                    <img src="img/siglo4.jpg" alt="Saturnalia romana">
+                    <img src="{% static 'webapp/img/siglo4.jpg' %}" alt="Saturnalia romana">
                 </div>
             </div>
 
@@ -557,7 +557,7 @@
                         Se generaliza el Adviento, un período de preparación espiritual previo
                         a la celebración de la Navidad.
                     </p>
-                    <img src="img/adviento.jpg" alt="Adviento">
+                    <img src="{% static 'webapp/img/adviento.jpg' %}" alt="Adviento">
                 </div>
             </div>
 
@@ -569,7 +569,7 @@
                         San Francisco de Asís crea el primer pesebre viviente en Greccio, Italia,
                         representando el nacimiento de Jesús.
                     </p>
-                    <img src="img/pesebre.jpg" alt="Pesebre">
+                    <img src="{% static 'webapp/img/pesebre.jpg' %}" alt="Pesebre">
                 </div>
             </div>
 
@@ -581,7 +581,7 @@
                         La Navidad llega a México con la conquista española y se fusiona con
                         tradiciones indígenas, dando origen a las posadas.
                     </p>
-                    <img src="img/posadas.jpg" alt="Posadas">
+                    <img src="{% static 'webapp/img/posadas.jpg' %}" alt="Posadas">
                 </div>
             </div>
 
@@ -593,7 +593,7 @@
                         Charles Dickens impulsa la idea de la Navidad como una festividad
                         familiar basada en la solidaridad y la generosidad.
                     </p>
-                    <img src="img/dickens.jpg" alt="Navidad victoriana">
+                    <img src="{% static 'webapp/img/dickens.jpg' %}" alt="Navidad victoriana">
                 </div>
             </div>
 
@@ -605,7 +605,7 @@
                         La Navidad se consolida como una celebración global, cultural y familiar,
                         con tradiciones únicas en cada país.
                     </p>
-                    <img src="img/actual.jpg" alt="Navidad actual">
+                    <img src="{% static 'webapp/img/actual.jpg' %}" alt="Navidad actual">
                 </div>
             </div>
 
@@ -682,7 +682,7 @@
         <div class="simbolos-grid">
 
             <div class="simbolo-card">
-                <img src="img/arbol.jpg" alt="Árbol de Navidad">
+                <img src="{% static 'webapp/img/arbol.jpg' %}" alt="Árbol de Navidad">
                 <h3>Árbol de Navidad</h3>
                 <p>
                     Representa la vida, la esperanza y la renovación. Decorarlo en familia
@@ -691,7 +691,7 @@
             </div>
 
             <div class="simbolo-card">
-                <img src="img/estrella.jpg" alt="Estrella de Navidad">
+                <img src="{% static 'webapp/img/estrella.jpg' %}" alt="Estrella de Navidad">
                 <h3>Estrella</h3>
                 <p>
                     Simboliza la guía y la fe, recordando la estrella de Belén que condujo
@@ -700,7 +700,7 @@
             </div>
 
             <div class="simbolo-card">
-                <img src="img/campanas.jpg" alt="Campanas">
+                <img src="{% static 'webapp/img/campanas.jpg' %}" alt="Campanas">
                 <h3>Campanas</h3>
                 <p>
                     Representan la alegría y el anuncio de buenas noticias durante la
@@ -709,7 +709,7 @@
             </div>
 
             <div class="simbolo-card">
-                <img src="img/luces.jpg" alt="Luces navideñas">
+                <img src="{% static 'webapp/img/luces.jpg' %}" alt="Luces navideñas">
                 <h3>Luces</h3>
                 <p>
                     Simbolizan la luz que vence a la oscuridad y transmiten paz, esperanza
@@ -725,14 +725,14 @@
         <h2>Galería Navideña</h2>
 
         <div class="galeria-grid">
-            <img src="img/a1.png" alt="Navidad 1">
-            <img src="img/a2.jpg" alt="Navidad 2">
-            <img src="img/a3.png" alt="Navidad 3">
-            <img src="img/a4.jpg" alt="Navidad 4">
-            <img src="img/a5.jpg" alt="Navidad 5">
-            <img src="img/a6.jpg" alt="Navidad 6">
-            <img src="img/a7.jpg" alt="Navidad 7">
-            <img src="img/a8.jpg" alt="Navidad 8">
+            <img src="{% static 'webapp/img/a1.png' %}" alt="Navidad 1">
+            <img src="{% static 'webapp/img/a2.jpg' %}" alt="Navidad 2">
+            <img src="{% static 'webapp/img/a3.png' %}" alt="Navidad 3">
+            <img src="{% static 'webapp/img/a4.jpg' %}" alt="Navidad 4">
+            <img src="{% static 'webapp/img/a5.jpg' %}" alt="Navidad 5">
+            <img src="{% static 'webapp/img/a6.jpg' %}" alt="Navidad 6">
+            <img src="{% static 'webapp/img/a7.jpg' %}" alt="Navidad 7">
+            <img src="{% static 'webapp/img/a8.jpg' %}" alt="Navidad 8">
         </div>
     </section>
 
