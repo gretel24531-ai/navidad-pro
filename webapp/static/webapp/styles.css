@@ -1,0 +1,479 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #fffaf3;
+    color: #2e2e2e;
+    overflow-x: hidden;
+}
+
+@keyframes nieve{
+    from{
+        background-position: 0 -1000px;
+    }
+    to{
+        background-position: 0 1000px;
+    }
+}
+
+/* HEADER */
+.header{
+    background: linear-gradient(90deg, #461a07, #b71c1c);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+    gap: 15px; /* espacio entre imagen y título */
+}
+
+.header h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+    margin-bottom: 1.2rem;
+    margin: 0;
+    letter-spacing: 3px;
+    line-height: 1.2;
+}
+
+.header-deco{
+    width: 200px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.menu{
+    margin-top: 1rem;
+}
+
+.menu a{
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.3rem 0.6rem;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+}
+
+/* INICIO */
+.inicio{
+    background-image: url('img/tree.jpg');
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay{
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding: 2rem;
+    max-width: 700px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.overlay h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* SECCIONES */
+.seccion{
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.seccion h2{
+    color: #b71c1c;
+    margin-bottom: 1.5rem;
+}
+
+.fondo-verde{
+    background-color: #e8f5e9;
+}
+
+.fondo-rojo{
+    background-color: #fdecea;
+}
+
+.lista{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.lista li{
+    margin: 10px 0;
+}
+
+/* SIMBOLOS */
+.simbolos{
+    background-color: #fffaf3;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.simbolos h2{
+    color: #b71c1c;
+    margin-bottom: 1rem;
+}
+
+.simbolos-intro{
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* GRID */
+.simbolos-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* CARD */
+.simbolo-card{
+    background: white;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.simbolo-card:hover{
+    transform: translateY(-8px);
+}
+
+/* IMAGEN */
+.simbolo-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* TEXTO */
+.simbolo-card h3{
+    margin: 1.2rem 0 0.5rem;
+    color: #76584c;
+}
+
+.simbolo-card p{
+    padding: 0 1.5rem 1.8rem;
+    font-size: 1rem;
+}
+
+/* TRADICIONES – NUEVO ESTILO */
+.tradiciones{
+    background-color: #767154; /* verde grisáceo muy suave */
+    background-image:
+        radial-gradient(rgba(0,0,0,0.04) 1px, transparent 1px);
+    background-size: 32px 32px;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.tradiciones h2{
+    color: #fff;
+}
+.tradiciones-intro{
+    color: #fff;
+}
+.tradiciones-lista{
+    max-width: 900px;
+    margin: 3rem auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+/* ITEM */
+.tradicion-item{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 22px;
+    border-left: 8px solid #b71c1c;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    text-align: left;
+}
+
+/* ICONO */
+.tradicion-icon{
+    font-size: 2.4rem;
+    line-height: 1;
+}
+
+/* TEXTO */
+.tradicion-item h3{
+    margin-bottom: 0.4rem;
+    color: #2e7d32;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+    .tradicion-item{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        border-left: none;
+        border-top: 6px solid #b71c1c;
+    }
+}
+
+/* GALERIA */
+.galeria-mosaico{
+    background-color: #6f171f;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.galeria-mosaico h2{
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.galeria-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.galeria-grid img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+    padding: 8px;
+    border-radius: 20px;
+    border: 2px solid rgba(255,255,255,0.3);
+}
+
+.galeria-grid img:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+}
+
+
+/* MENSAJE */
+.mensaje{
+    background-color: #fff;
+    
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.mensaje h2{
+    margin-bottom: 1rem;
+    color: #bf9b7a;
+}
+
+/* FOOTER */
+.footer{
+    background-color: #1b1b1b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* NIEVE SOLO DONDE YO QUIERA */
+.snow{
+    position: relative;
+    overflow: hidden;
+}
+
+.snow::after{
+    content: "";
+    position: absolute;
+    inset: -200%;
+    background-image:
+        radial-gradient(3px 3px at 10% 10%, white 50%, transparent 51%),
+        radial-gradient(2px 2px at 30% 30%, white 50%, transparent 51%),
+        radial-gradient(4px 4px at 50% 50%, white 50%, transparent 51%),
+        radial-gradient(3px 3px at 70% 70%, white 50%, transparent 51%),
+        radial-gradient(2px 2px at 90% 20%, white 50%, transparent 51%);
+    background-size: 200px 200px;
+    background-repeat: repeat;
+    animation: nieve 8s linear infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.snow > *{
+    position: relative;
+    z-index: 2;
+}
+
+/* CONTENEDOR */
+.timeline{
+    position: relative;
+    max-width: 1000px;
+    margin: 4rem auto;
+}
+
+/* LINEA CENTRAL */
+.timeline::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 100%;
+    background-color: #b71c1c;
+}
+
+/* ITEM GENERAL */
+.timeline-item{
+    position: relative;
+    width: 50%;
+    padding: 2rem 3rem;
+    box-sizing: border-box;
+
+    opacity: 0;
+    transform: translateY(40px);
+    animation: aparecer 1.0s ease forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    animation-delay: 0.3s;
+}
+
+/* FECHA */
+.timeline-date{
+    position: absolute;
+    top: 20;
+    font-weight: 600;
+    color: #2e7d32;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+/* FECHA IZQUIERDA */
+.timeline-item.left .timeline-date{
+    right: -160px;
+    text-align: right;
+}
+
+/* FECHA DERECHA */
+.timeline-item.right .timeline-date{
+    left: -160px;
+    text-align: left;
+}
+
+@keyframes aparecer{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* PUNTO */
+.timeline-item::before{
+    content: "";
+    position: absolute;
+    top: 30px;
+    width: 22px;
+    height: 22px;
+    background: radial-gradient(circle, #fff 30%, #b71c1c 70%);
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(183,28,28,0.6);
+    z-index: 2;
+}
+
+/* IZQUIERDA */
+.timeline-item.left{
+    left: 0;
+    text-align: right;
+}
+
+.timeline-item.left::before{
+    right: -11px;
+}
+
+/* DERECHA */
+.timeline-item.right{
+    left: 50%;
+    text-align: left;
+}
+
+.timeline-item.right::before{
+    left: -11px;
+}
+
+/* TARJETA */
+.timeline-content{
+    background: white;
+    padding: 1.8rem;
+    border-radius: 18px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease;
+}
+
+.timeline-content:hover{
+    transform: translateY(-6px);
+}
+
+/* TITULO */
+.timeline-content h3{
+    color: #2e7d32;
+    margin-bottom: 0.5rem;
+}
+
+/* IMAGEN */
+.timeline-content img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-top: 1rem;
+
+    border: 3px solid #e8f5e9; /* marco */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+}
+
+/* RESPONSIVE (CELULAR) */
+@media (max-width: 768px){
+    .timeline::before{
+        left: 20px;
+    }
+
+    .timeline-item{
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 20px;
+        text-align: left;
+    }
+
+    .timeline-item.left,
+    .timeline-item.right{
+        left: 0;
+    }
+
+    .timeline-item::before{
+        left: 9px;
+    }
+}
